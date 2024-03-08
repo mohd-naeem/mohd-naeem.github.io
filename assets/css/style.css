@@ -36,7 +36,7 @@
   /* padding: 10px; */
 }
 
-.icon-btn {
+/* .icon-btn {
   margin-left: auto;
   width: 50px;
   height: 50px;
@@ -48,6 +48,18 @@
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
+} */
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 45px;
+  display: inline-block;
+  margin: 4px;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .github {
@@ -58,8 +70,9 @@
   color: #0077b5;
 }
 
-.angellist {
-  color: grey;
+.researchgate {
+  color: #04cda7;
+  background-color: #FFFFFF; /* Add a background color for the default state */
 }
 
 .icon-btn:hover {
@@ -67,16 +80,17 @@
   color: #FFFFFF;
 }
 
+.github:hover {
+  background-color: black;
+}
+
 .linkedin:hover {
   background-color: #0077b5;
 }
 
-.angellist:hover {
-  background-color: grey;
-}
-
-.github:hover {
-  background-color: black;
+.researchgate:hover {
+  background-color: #04cda7;
+  color: #FFFFFF;
 }
 
 /* Buttons - Read Me, Contact Us */
@@ -322,6 +336,7 @@ h3 {
 #intro.section {
   background: #a7ffeb repeat;
   position: relative;
+  height: 70vh;
 }
 
 #intro.section .container {
