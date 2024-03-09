@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .download {
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: #000000 0px 1px 5px;
+            background-color: #c3bed7;
+            color: #000000;
+            border-radius: 5px;
+        }
+
+        .cv-bold {
+            font-weight: bold;
+        }
+
+        .download:hover {
+            background-color: #f1f1f1;
+            color: #000000;
+        }
+
+        object {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+        }
+
+        object p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        object a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="assets/Resume.pdf" download class="download">Download CV</a>
+
+    <object data="assets/Resume.pdf#zoom=scale" type="application/pdf">
+        <p>It appears you don't have a PDF plugin for this browser.
+           You can <a href="assets/Resume.pdf#toolbar=0&view=FitH">download the PDF file.</a></p>
+    </object>
+</body>
+</html>
