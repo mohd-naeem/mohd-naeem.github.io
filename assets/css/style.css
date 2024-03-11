@@ -37,16 +37,17 @@
 }
 
 .icon-btn {
+  margin-left: auto;
   width: 50px;
   height: 50px;
   border: 0;
   color: #FFFFFF;
   cursor: pointer;
   font-size: 30px;
+  line-height: 70px;
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
-  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .github {
@@ -57,9 +58,8 @@
   color: #0077b5;
 }
 
-.researchgate {
-  color: #04cda7;
-  background-color: #FFFFFF; /* Add a background color for the default state */
+.angellist {
+  color: grey;
 }
 
 .icon-btn:hover {
@@ -67,17 +67,16 @@
   color: #FFFFFF;
 }
 
-.github:hover {
-  background-color: black;
-}
-
 .linkedin:hover {
   background-color: #0077b5;
 }
 
-.researchgate:hover {
-  background-color: #04cda7;
-  color: #FFFFFF;
+.angellist:hover {
+  background-color: grey;
+}
+
+.github:hover {
+  background-color: black;
 }
 
 /* Buttons - Read Me, Contact Us */
@@ -85,9 +84,9 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;;
+  background: #fff;
+  color: #00796b;
+  border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -96,10 +95,10 @@
   -webkit-border-radius: 5px;
 }
 
-.readme:hover{
-  color: #00796b;
-  background-color: white;
-}
+/* .readme:hover{
+  color: white;
+  background-color: #00796b;
+} */
 
 .contactme {
   position: relative;
@@ -120,19 +119,40 @@
   color: #00796b;
   background-color: white;
 }
+/* main body */
 
-
+/* body-color */
 
 body {
   color: #333;
   font-size: 18px;
 }
 
+/* body {
+  color: black;
+  font-size: 18px;
+} */
+
+/* main a -- links */
+
+/* a {
+  color: #009688;
+} */
 
 a {
   color: #004d40;
 }
 
+/* main blockqoute */
+
+/* blockquote {
+  border-left: 5px solid #795548;
+  color: #795548;
+  font-size: 125%;
+  font-weight: 400;
+  margin: 20px 0;
+  padding-left: 1.5rem;
+} */
 
 blockquote {
   border-left: 5px solid #795548;
@@ -152,7 +172,7 @@ blockquote * {
   text-align: center;
 }
 
-
+/* main nav */
 
 nav {
   background: white;
@@ -160,12 +180,24 @@ nav {
   height: 0;
 }
 
+/* nav {
+  background: rgb(149, 126, 212);
+  box-shadow: none;
+  height: 0;
+} */
 
 nav i {
   padding: 0 15px;
   position: relative;
   top: 5px;
 }
+
+/* main */
+
+/* main {
+  background: url(../../assets/img/bg.png) repeat;
+  padding-left: 190px;
+} */
 
 main {
   background: url(../../assets/img/bg.png) repeat;
@@ -195,6 +227,13 @@ ul.side-nav li {
   padding: 0;
 }
 
+/* ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(48, 122, 207);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
+} */
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
@@ -209,7 +248,13 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   font-weight: 200;
 }
 
-
+/* ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+} */
 
 ul.side-nav.fixed li.logo {
   background-color: #fafafa;
@@ -267,12 +312,16 @@ h3 {
   height: 100vh;
 }
 
+/* Original */
 
+/* #intro.section {
+  background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
+  position: relative;
+} */
 
 #intro.section {
   background: #a7ffeb repeat;
   position: relative;
-  height: 70vh;
 }
 
 #intro.section .container {
@@ -283,7 +332,12 @@ h3 {
   top: 0;
 }
 
-
+/* #intro.section .container *:not(span) {
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+} */
 
 #intro.section .container *:not(span) {
   font-weight: 300;
@@ -412,7 +466,11 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
+/* main a.hoverline */
 
+/* a.hoverline:hover {
+  border-bottom: 3px solid #24305e !important;
+} */
 
 a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
@@ -494,13 +552,19 @@ small {
   color: #008073 !important;
 }
 
+/* .teal-text {
+  color: #0b5e86 !important;
+} */
 
+/* .teal */
 
 .teal {
   background-color: #008073 !important;
 }
 
-
+/* .teal {
+  background-color: #00695c !important;
+} */
 
 @media (min-width: 1200px) {
   #experience .container {
