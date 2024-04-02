@@ -421,6 +421,28 @@ h3 {
   text-transform: uppercase;
 }
 
+/* Adjusting card size to match PDF size */
+#cv-page .card {
+  height: auto; /* Reset the height to auto */
+  max-width: 800px; /* Set a max width for the card */
+  margin: 0 auto; /* Center the card */
+  min-height: 500px;
+}
+
+#cv-page .card-content {
+  padding: 20px; /* Add padding around the PDF */
+  display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+#cv-page .card-content object {
+  min-height: 400px;
+  width: 100%; /* Fill the entire width of the card */
+}
+
+
+
 #experience .card-action {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
@@ -595,6 +617,10 @@ small {
 }
 
 @media (max-width: 992px) {
+  #cv-page h3 {
+    margin-top: 0; /* Remove or reduce the top margin for h3 in mobile view */
+  }
+  
   main {
     padding-left: 0px;
     padding-top: 64px;
@@ -646,6 +672,11 @@ small {
   .name-title span {
     display: block;
     font-size: 14px;
+  }
+  #cv-page h3,
+  #cv-page .container {
+    position: relative;
+    top: 0px;
   }
   h3, .container {
     position: relative;
@@ -703,5 +734,16 @@ small {
   }
   #intro.section {
     background-position-x: 30%;
+  }
+  #cv-page .card object {
+    width: 100%; /* Fill the entire width of the card */
+    height: 100%; /* Set a fixed height for mobile */
+  }
+}
+
+@media (min-width: 992px) {
+  #cv-page .card object {
+    width: 100%; /* Fill the entire width of the card */
+    height: 100%; /* Set a fixed height for desktop */
   }
 }
