@@ -65,6 +65,9 @@
 .researchgate {
   color: #00ccbb;
 }
+.blog {
+  color: #1e1e1e;
+}
 
 .icon-btn:hover {
   transform: scale(1.10);
@@ -85,6 +88,10 @@
 
 .researchgate:hover {
   background-color: #00ccbb;
+}
+
+.blog:hover {
+  background-color: #1e1e1e;
 }
 
 /* Buttons - Read Me, Contact Us */
