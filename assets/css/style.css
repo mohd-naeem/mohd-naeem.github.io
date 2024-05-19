@@ -12,12 +12,10 @@
   --border-size: 1px;
 }
 
-
-
 .profile-pic {
   position: relative;
-  max-width:130px;
-  max-height:130px;
+  max-width:112px;
+  max-height:112px;
   width: auto;
   height: auto;
   overflow: hidden;
@@ -25,15 +23,45 @@
   
   
   /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 6px solid var(--avatar-stroke); 
+  margin-top: 36px; 
+  margin-bottom: 40px;
+  border: 2px solid var(--avatar-stroke); 
   border-radius: 50% !important;
 }
 
 .profile-pic img {
   width: 100%;
   height: auto;
+}
+
+.shotintro {
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.myname {
+  font-family: inherit !important;
+  font-size: 1.75rem;
+  font-weight: 900 !important;
+  line-height: 1.2;
+  letter-spacing: 0.25px;
+  color: #717070 !important;
+  padding-top: 12px !important;
+  padding-bottom: 8px !important;
+  margin: 0 !important;
+}
+
+.myprofession {
+  font-family: inherit !important;
+  font-style: italic !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
+  letter-spacing: 0.25px;
+  color: #7C7C7C !important;
+  padding-top: 4px !important;
+  padding-bottom: 0px !important;
+  margin: 0 !important;
 }
 
 .tracker {
@@ -184,7 +212,6 @@ ul.side-nav {
 ul.side-nav li {
   background-color: var(--card-bg) !important;
   padding: 0px 24px;
-  
 }
 
 ul.side-nav.fixed a {
@@ -209,7 +236,9 @@ ul.side-nav.fixed li.logo {
   box-shadow: none;
   box-sizing: content-box;
   min-height: 90px;
-  padding: 30px 30px 40px;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin-bottom: 70px;
 }
 
 ul.side-nav.fixed li.logo a {
@@ -748,4 +777,11 @@ small {
   color: var(--font-active) !important;
   font-weight: 900;
   letter-spacing: 0.6px;
+}
+
+.download-txt {
+  color: var(--font-active) !important;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

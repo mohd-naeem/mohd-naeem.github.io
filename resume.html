@@ -75,7 +75,6 @@
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_Wun18FxNEY7NgwRshAMvwkiBfTUViTTq2AvaFblG2E" />
 
-
 </head>
 
 <body>
@@ -98,7 +97,7 @@
 
       <li class="bold">
         <a aria-label="Go back to homepage" href="/" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-home small"></i><span>Home</span></a>
+            class="mdi-action-home small"></i><span>HOME</span></a>
       </li>
   
     </ul>
@@ -107,11 +106,11 @@
   <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
     <a aria-label="Go back to homepage" 
-        href="/" 
-      class="button-collapse"><i class="mdi-action-home small"></i></a>
+        href="https://mohd-naeem.github.io/" 
+      class="button-collapse"><i class=""></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Md Naeem</a><span
-        class="black-text">Mechanical Engineer</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="white-text">Md Naeem</a><span
+        class="italic-text">Mechanical Engineer</span>
     </div>
   </nav>
 
@@ -127,8 +126,8 @@
                     <object 
                         data="assets/Resume.pdf?#view=Fit&toolbar=0&navpanes=0&scrollbar=0" 
                         type="application/pdf">
-                        <p>It appears you don't have a PDF plugin for this browser.
-                        You can <a class="download-txt" href="assets/Resume.pdf">download the PDF file.</a></p>
+                        <p style="color: #AFB0B1;">It appears you don't have a PDF plugin for this browser.
+                        You can <a class="download-txt hoverline" href="assets/Resume.pdf">download the PDF file.</a></p>
                     </object>
                 </div>
                 <div class="card-action">
@@ -175,20 +174,6 @@
       })
     })
   </script>
-  <script>
-    document.getElementById('shareBtn').addEventListener('click', async () => {
-      try {
-        await navigator.share({
-          title: 'Md Naeem | Mechanical Engineer',
-          text: 'Check out Md Naeem\'s CV!',
-          url: 'https://mohd-naeem.github.io/assets/Resume.pdf'
-        });
-        console.log('Successfully shared');
-      } catch (error) {
-        console.error('Error sharing:', error.message);
-      }
-    });
-    </script>
 </body>
 
 </html>
