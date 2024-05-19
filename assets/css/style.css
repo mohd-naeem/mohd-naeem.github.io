@@ -125,13 +125,21 @@
   box-shadow: var(--button-shadow) 1px 1px 4px;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 600px) {
-  .contactme {
-      font-size: 18px; /* Reduce font size */
-      padding: 4px 12px !important;
-  }
-  
+.myblog {
+  position: relative;
+  padding: 11px 48px !important;
+  color: var(--font-inactive);
+  background-color: var(--card-bg);
+  border: var(--border-size) solid var(--card-outline);
+  font-weight: bolder !important;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-right: 8px;
+  border-radius: 12px;
+  -webkit-border-radius: 5px;
+  box-shadow: var(--button-shadow) 1px 1px 4px;
 }
 
 .contactme:hover{
@@ -140,6 +148,24 @@
   box-shadow: var(--button-shadow) 2px 2px 8px;
 }
 
+.myblog:hover{
+  color: var(--icon-active);
+  background-color: var(--button-active);
+  box-shadow: var(--button-shadow) 2px 2px 8px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .contactme {
+      font-size: 18px; /* Reduce font size */
+      padding: 4px 12px !important;
+  }
+  .myblog {
+      font-size: 18px; /* Reduce font size */
+      padding: 4px 26px !important;
+  }
+  
+}
 /* main body */
 
 /* body-color */
@@ -226,7 +252,7 @@ ul.side-nav.fixed a {
   box-sizing: content-box;
   display: block;
   line-height: 100%;
-  padding: 9px 0 9px;
+  padding: 10px 0 8px;
   border: none;
   border-radius: 0.75rem;
   font-size: 14px !important;
