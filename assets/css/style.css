@@ -41,20 +41,20 @@
 
 .myname {
   font-family: inherit !important;
-  font-size: 1.75rem;
-  font-weight: 900 !important;
+  font-size: 28px;
+  font-weight: bolder !important;
   line-height: 1.2;
   letter-spacing: 0.25px;
   color: #717070 !important;
-  padding-top: 12px !important;
-  padding-bottom: 8px !important;
+  padding-top: 24px !important;
+  padding-bottom: 16px !important;
   margin: 0 !important;
 }
 
 .myprofession {
   font-family: inherit !important;
   font-style: italic !important;
-  font-size: 18px !important;
+  font-size: 14px !important;
   font-weight: 500 !important;
   line-height: 1.2;
   letter-spacing: 0.25px;
@@ -219,9 +219,10 @@ ul.side-nav.fixed a {
   box-sizing: content-box;
   display: block;
   line-height: 100%;
-  padding: 10px 0 12px;
+  padding: 6px 0 8px;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
+  font-size: 14px !important;
 }
 
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
