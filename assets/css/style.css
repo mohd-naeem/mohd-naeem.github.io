@@ -8,6 +8,8 @@
   --avatar-stroke: #BDBDBD;
   --normal-text: #AFB0B1;
   --icon-active: #B9B9B9;
+  --button-shadow: rgba(0, 0, 0, 0.5);
+  --border-size: 1px;
 }
 
 
@@ -51,13 +53,14 @@
   border: 0;
   color: var(--font-inactive);
   background-color: var(--card-bg);
-  border: 2px solid var(--card-outline);
+  border: var(--border-size) solid var(--card-outline);
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
+  box-shadow: var(--button-shadow) 1px 1px 4px;
 }
 
 
@@ -65,29 +68,36 @@
   transform: scale(1.10);
   color: var(--icon-active);
   background-color: var(--button-active);
+  box-shadow: var(--button-shadow) 2px 2px 8px;
 }
 
-
+.buttons {
+  display: flex;
+}
 
 .contactme {
   position: relative;
-  padding: 11px 35px;
+  padding: 11px 35px !important;
   color: var(--font-inactive);
   background-color: var(--card-bg);
-  border: 2px solid var(--card-outline);
-  font-weight: 600;
-  font-size: 15px;
+  border: var(--border-size) solid var(--card-outline);
+  font-weight: bolder !important;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   margin-top: 1.5em;
-  border-radius: 5px;
+  margin-right: 8px;
+  border-radius: 12px;
   -webkit-border-radius: 5px;
+  box-shadow: var(--button-shadow) 1px 1px 4px;
 }
 
 .contactme:hover{
   color: var(--icon-active);
   background-color: var(--button-active);
+  box-shadow: var(--button-shadow) 2px 2px 8px;
 }
+
 /* main body */
 
 /* body-color */
@@ -160,7 +170,7 @@ dt {
 ul.side-nav {
   width: 260px;
   background-color: var(--card-bg) ;
-  border-right: 2px solid var(--card-outline);
+  border-right: var(--border-size) solid var(--card-outline);
   box-shadow: none;
 }
 
@@ -171,7 +181,6 @@ ul.side-nav li {
 }
 
 ul.side-nav.fixed a {
-  background-color: var(--card-bg);
   box-shadow: none;
   box-sizing: content-box;
   display: block;
@@ -182,7 +191,7 @@ ul.side-nav.fixed a {
 }
 
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
-  background-color: var(--card-bg);
+  background-color: transparent;
   border: none;
   font-weight: 200;
 }
@@ -190,7 +199,6 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
 
 
 ul.side-nav.fixed li.logo {
-  background-color: var(--card-bg);
   box-shadow: none;
   box-sizing: content-box;
   min-height: 90px;
@@ -198,19 +206,31 @@ ul.side-nav.fixed li.logo {
 }
 
 ul.side-nav.fixed li.logo a {
-  background-color: var(--card-bg);
   font-weight: 200;
   line-height: 100%;
 }
 
 /* side-nav-hover-effect */
 ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
+  color: var(--icon-active) !important;
   background-color: var(--button-active);
   border: none;
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: var(--font-inactive) !important;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span:hover,
+ul#slide-out li:not(.logo) a span:hover {
+  color: var(--font-active) !important;
+}
+
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span.active,
+ul#slide-out li:not(.logo) a span.active {
+  color: var(--font-active) !important;
 }
 
 
@@ -279,15 +299,15 @@ h3 {
 } */
 
 #intro.section .container *:not(span) {
-  font-weight: 300;
+  font-weight: 500;
   /* font-weight: 400; */
   line-height: 150%;
   /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 4px var(--button-shadow);
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: 5px solid var(--card-bg);
 }
 
 #intro.section .teal {
@@ -299,15 +319,16 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: var(--button-active);
 }
 
 .card {
   margin-bottom: 60px;
   background-color: var(--card-bg);
   box-shadow: none;
-  border: 2px solid var(--card-outline);
+  border: var(--border-size) solid var(--card-outline);
   border-radius: 12px;
+  box-shadow: var(--button-shadow) 0.5px 0.5px 12px;
 }
 
 .card .role {
@@ -424,6 +445,7 @@ a.hoverline {
   transition: 0.25s all;
   -moz-transition: 0.25s all;
   -webkit-transition: 0.25s all;
+  color: var(--normal-text);
 }
 
 /* main a.hoverline */
@@ -433,7 +455,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid var(--font-inactive) !important;
 }
 
 #skills .card.large {
@@ -441,7 +463,7 @@ a.hoverline:hover {
 }
 
 #skills h4 {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--font-inactive);
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
@@ -462,7 +484,7 @@ a.hoverline:hover {
 }
 
 #experience .card-content .row {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--font-inactive);
   padding-bottom: 10px;
 }
 
@@ -478,11 +500,10 @@ a.hoverline:hover {
   height: 240px;
 }
 
+
+
 .card-action a.btn-floating {
   margin-bottom: 0;
-  color: var(--font-inactive);
-  background-color: var(--card-bg) !important;
-  border: 2px solid var(--card-outline) !important;
 }
 
 #contact a:not(.btn-floating) {
@@ -523,7 +544,7 @@ small {
 
 .teal {
   background-color: var(--card-outline) !important;
-  color: var(--font-inactive)
+  color: var(--font-active)
 }
 
 
@@ -701,4 +722,23 @@ small {
 
 .brown-text {
   color: var(--font-active) !important;
+}
+
+.italic-text {
+  font-style: italic;
+  font-size: smaller;
+  color: var(--font-inactive);
+}
+
+.btn-floating {
+  color: var(--font-inactive) !important;
+  text-shadow: var(--button-shadow) 1px 1px 4px;
+  background-color: var(--card-bg) !important;
+  border: var(--border-size) solid var(--card-outline);
+}
+
+#education .hoverline {
+  color: var(--font-active) !important;
+  font-weight: 900;
+  letter-spacing: 0.6px;
 }
