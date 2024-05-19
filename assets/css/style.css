@@ -71,9 +71,7 @@
   box-shadow: var(--button-shadow) 2px 2px 8px;
 }
 
-.buttons {
-  display: flex;
-}
+
 
 .contactme {
   position: relative;
@@ -90,6 +88,15 @@
   border-radius: 12px;
   -webkit-border-radius: 5px;
   box-shadow: var(--button-shadow) 1px 1px 4px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .contactme {
+      font-size: 18px; /* Reduce font size */
+      padding: 4px 12px !important;
+  }
+  
 }
 
 .contactme:hover{
