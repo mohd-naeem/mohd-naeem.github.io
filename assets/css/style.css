@@ -41,11 +41,9 @@
 
 .myname {
   font-family: inherit !important;
-  font-size: 28px;
   font-weight: bolder !important;
   line-height: 1.2;
   letter-spacing: 0.25px;
-  color: #717070 !important;
   padding-top: 24px !important;
   padding-bottom: 16px !important;
   margin: 0 !important;
@@ -54,11 +52,9 @@
 .myprofession {
   font-family: inherit !important;
   font-style: italic !important;
-  font-size: 14px !important;
   font-weight: 500 !important;
   line-height: 1.2;
   letter-spacing: 0.25px;
-  color: #7C7C7C !important;
   padding-top: 4px !important;
   padding-bottom: 0px !important;
   margin: 0 !important;
@@ -219,9 +215,9 @@ ul.side-nav.fixed a {
   box-sizing: content-box;
   display: block;
   line-height: 100%;
-  padding: 6px 0 8px;
+  padding: 8px 0 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.75rem;
   font-size: 14px !important;
 }
 
