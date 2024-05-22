@@ -541,13 +541,18 @@ a.hoverline:hover {
   padding-bottom: 20px;
 }
 
-#skills .col img.responsive-img {
-  margin: 0 auto;
-  max-height: 100px;
+.skills .col {
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   padding-bottom: 10px;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  text-align: center; /* Center the text */
+}
+
+.skills .col img.responsive-img {
+  max-height: 100px;
+  width: auto; /* Maintain aspect ratio */
 }
 
 .card.large .card-content p {
