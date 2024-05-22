@@ -541,18 +541,13 @@ a.hoverline:hover {
   padding-bottom: 20px;
 }
 
-.skills .col {
-  display: flex;
-  flex-direction: column; /* Stack the image and text vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  padding-bottom: 10px;
-  text-align: center; /* Center the text */
-}
-
-.skills .col img.responsive-img {
+#skills .col img.responsive-img {
+  margin: 0 auto;
   max-height: 100px;
-  width: auto; /* Maintain aspect ratio */
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
 }
 
 .card.large .card-content p {
@@ -795,7 +790,7 @@ small {
 }
 
 .col {
-  color: var(--normal-text) !important;
+  color: var(--normal-text);
 }
 
 .brown-text {
