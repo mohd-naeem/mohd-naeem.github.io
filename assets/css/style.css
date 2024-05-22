@@ -12,6 +12,13 @@
   --border-size: 1px;
 }
 
+
+body {
+  color: var(--main-bg);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
 .profile-pic {
   position: relative;
   max-width:112px;
@@ -170,11 +177,6 @@
 
 /* body-color */
 
-body {
-  color: var(--main-bg);
-  font-family: 'Source Sans Pro';
-  font-size: 18px;
-}
 
 a {
   color: var(--font-inactive);
@@ -788,7 +790,7 @@ small {
 }
 
 .col {
-  color: var(--normal-text);
+  color: var(--normal-text) !important;
 }
 
 .brown-text {
